@@ -1,0 +1,175 @@
+
+:root{
+    --color_01:#EEEEEE;
+    --color_02:#fe860c;
+    --color_03:#0083ca;
+    --color_04:#0f3057;
+    --color_05:#3E3B37;
+}
+
+@font-face {
+    font-family: Nunito;
+    src: url('../fonts/Nunito-Regular.ttf');
+}
+
+*{
+    margin:0px;
+    padding:0px;
+    position: relative;
+}
+
+#container{
+    width:100vw;
+    height: 100vh;
+    background: rgb(238,238,238);
+    background: linear-gradient(180deg, rgba(238,238,238,1) 10%, rgba(255,255,255,1) 110%);
+}
+
+#header{
+    width: 100%;
+    height: 60px;
+    background-color: var(--color_03);
+    text-align:center;
+    transition: all 0.25s;
+}
+
+#logo{
+    height: 35px;
+    margin-top:12.5px;
+    transition: all 0.25s;
+}
+
+#logo:hover{
+    height: 36px;
+    margin-top: 12px;
+    transition: all 0.25s;
+}
+
+#counter_area{
+    width: 100vw;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+}
+
+#box{
+    display: flex;
+    flex-direction: row;
+    margin:0px;
+    padding:0px;
+    
+}
+
+#counter_box{
+    height: 70px;
+    max-width: min-content;
+    min-width: 300px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 15px;
+    border: solid;
+    border-color: var(--color_03);
+    background-color:#ffffff;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+#numbers{
+    font-family: Nunito;
+    color:var(--color_05);
+    font-size: 40px;
+    margin-top:8px;
+    transition: all 0.25s;
+}
+
+#button{
+    height: 70px;
+    width: 70px;
+    border: solid;
+    border-color: var(--color_03);
+    border-radius: 15px;
+    left:5px;
+    transition: all 0.25s;
+}
+#button:hover{
+    cursor: pointer;
+    background-color:var(--color_04);
+    border-color: var(--color_04);
+    transition: all 0.25s;
+}
+
+#button_simbol{
+    width:50%;
+    height: 50%;
+    margin:25%;
+    transition: all 0.25s;
+}
+
+#button_simbol:hover{
+    width:60%;
+    height: 60%;
+    margin:20%;
+    transition: all 0.25s;
+}
+
+
+#texto{
+    font-family: Nunito;
+    color:var(--color_05);
+    font-size: 16px;
+    margin-top:16px;
+}
+
+#clicks{
+    font-size: 20px;
+    color:var(--color_02);
+}
+
+@media (max-device-width: 500px){
+    #header{
+        height: 120px;
+    }
+    
+    #logo{
+        height: 65px;
+        margin-top:27.5px;
+    }
+    
+    #logo:hover{
+        height: 70px;
+        margin-top: 25px;
+    }
+
+    #counter_area{
+        height: calc(100vh - 120px);
+    }
+
+    #counter_box{
+        height: 120px;
+        max-width: min-content;
+        min-width: 500px;
+        border-radius: 30px;
+    }
+    
+    #numbers{
+        font-size: 80px;
+        margin-top:4px;
+    }
+    
+    #button{
+        height: 120px;
+        width: 120px;
+        border-radius: 30px;
+        left:10px;
+    }
+
+    #texto{
+        font-size: 30px;
+        margin-top:30px;
+    }
+
+    #clicks{
+        font-size: 40px;
+    }
+}
